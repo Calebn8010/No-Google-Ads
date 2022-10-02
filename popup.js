@@ -36,6 +36,7 @@ function RemoveAdSearchResults() {
   //var sideAds = document.getElementsByClassName('TQc1id hSOk2e rhstc4')
   var sideAds = document.getElementsByClassName('ptJHdc commercial-unit-desktop-rhs VjDLd');
   var bottomAds = document.getElementById('bottomads');
+  var longscrollAds = document.getElementsByClassName('uEierd');
   //var bottomAds = document.getElementById('ptJHdc commercial-unit-desktop-top');
   //var tads = document.getElementById('tadsb');
   
@@ -43,10 +44,10 @@ function RemoveAdSearchResults() {
   while (bodyAds.length > 0) {
     bodyAds[0].parentNode.removeChild(bodyAds[0]);
   }
+  while (longscrollAds.length > 0) {
+    longscrollAds[0].parentNode.removeChild(longscrollAds[0]);
+  }
   bottomAds.remove();
   //bodyAds[0].parentNode.removeChild(bodyAds[0]);
   sideAds[0].parentNode.removeChild(sideAds[0]);
-  
-  
-  //tads.remove();
 }
