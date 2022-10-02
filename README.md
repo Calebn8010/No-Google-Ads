@@ -1,2 +1,2 @@
-# Chrome-Light-Dark-Mode
-#### Chrome extension that allows user to toggle any website into a dark mode or light mode.
+# No Google Ads
+#### Chrome extension that allows user to remove ads from Google search.
