@@ -32,9 +32,8 @@ function setPageBackgroundColor() {
 function RemoveAdSearchResults() {
   var topAds = document.getElementsByClassName('qGXjvb');
   var sideAds = document.getElementsByClassName('TQc1id hSOk2e rhstc4')
-  //var numberofads = elements.length;
+  var bottomAds = document.getElementById('bottomads');
   topAds[0].parentNode.removeChild(topAds[0]);
   sideAds[0].parentNode.removeChild(sideAds[0]);
-  //console.log(numberofads);
-
+  bottomAds.remove();
 }
