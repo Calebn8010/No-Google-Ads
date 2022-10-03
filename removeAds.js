@@ -1,4 +1,4 @@
-/*console.log(document.getElementsByClassName('qGXjvb'));
+console.log(document.getElementsByClassName('qGXjvb'));
 var bodyAds = document.getElementsByClassName('qGXjvb');
 console.log(bodyAds.length);
 //var sideAds = document.getElementsByClassName('TQc1id hSOk2e rhstc4')
@@ -18,4 +18,4 @@ while (longscrollAds.length > 0) {
 bottomAds.remove();
 //bodyAds[0].parentNode.removeChild(bodyAds[0]);
 sideAds[0].parentNode.removeChild(sideAds[0]);
- */ 
+ 
