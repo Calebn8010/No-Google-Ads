@@ -1,6 +1,6 @@
-console.log(document.getElementsByClassName('qGXjvb'));
+//console.log(document.getElementsByClassName('qGXjvb'));
 var bodyAds = document.getElementsByClassName('qGXjvb');
-console.log(bodyAds.length);
+//console.log(bodyAds.length);
 //var sideAds = document.getElementsByClassName('TQc1id hSOk2e rhstc4')
 var sideAds = document.getElementsByClassName('ptJHdc commercial-unit-desktop-rhs VjDLd');
 var bottomAds = document.getElementById('bottomads');

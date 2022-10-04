@@ -1,3 +1,11 @@
+// Check if togle is enabled / disabled 
+console.log(document.querySelector('.switch'));
+cb = document.getElementsByClassName('switch')[0];
+alert(document.querySelector('.switch'));
+console.log(cb);
+console.log("test");
+
+
 // Initialize butotn with users's prefered color
 let changeColor = document.getElementById("changeColor");
 //let changeColor = "#3D3D3D";
