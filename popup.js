@@ -1,9 +1,9 @@
 // Check if togle is enabled / disabled 
 //document.querySelector('.switch'));
-switch1 = document.getElementsByClassName('switch')[0];
+let switch1 = document.getElementsByClassName('switch')[0];
 //alert(document.querySelector('.switch'));
 //switch1 = document.getElementById("switch1");
-alert("test");
+//alert("test");
 console.log("test");
 
 // When switch is toggled change text to enabled
@@ -22,8 +22,11 @@ switch1.addEventListener("click", async () => {
 
 // Change text to disabled / enabled
 function switchToggle() {
-  alert("test12");
-  document.getElementById("switchText").innerHTML = "Enabled";
+  //alert("test12");
+  document.getElementById("switchText").style.color = "blue";
+  //switch1.innerHTML = "Enabled";
+  //document.getElementById("switchText").innerHTML = "Enabled";
+  //document.getElementsByClassName("div1").innerHTML = "Enabled";
   //document.defaultView. = "#7B7B7B";
   
 }
