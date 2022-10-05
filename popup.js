@@ -1,19 +1,16 @@
-// Check if togle is enabled / disabled 
-//document.querySelector('.switch'));
-let switch1 = document.getElementsByClassName('switch')[0];
-//alert(document.querySelector('.switch'));
-//switch1 = document.getElementById("switch1");
-//alert("test");
-console.log("test");
+let switch1 = document.getElementById("switch1");
+//let switch1 = document.querySelector("input[name=switch1]");
 
-// When switch is toggled change text to enabled
-switch1.addEventListener("click", async () => {
+// When switch is toggled change text to enabled / disabled
+switch1.addEventListener("change", async () => {
   let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-
-  /*chrome.scripting.executeScript({
-    target: { tabId: tab.id },
-    function: setPageBackgroundColor,
-  });*/
+  if (switch1.checked) {
+    document.getElementById("switchText").innerHTML = "Enabled";
+  }
+  else {
+    document.getElementById("switchText").innerHTML = "Disabled";
+    //alert("disabled");
+  }
   chrome.scripting.executeScript({
     target: { tabId: tab.id },
     function: switchToggle,
