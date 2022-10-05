@@ -24,7 +24,7 @@ button {
     text-align: center;
     font-family: "Times New Roman";
     text-decoration-style: solid;
-    padding: 1rem 1rem;
+    padding-top: .5rem .5rem;
   }
 
   .switch {

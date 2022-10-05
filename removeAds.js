@@ -1,3 +1,13 @@
+
+chrome.storage.sync.get('color', function(result) {
+    alert('Value currently is ' + result.color);
+  });
+
+chrome.storage.sync.get(null, function(items) {
+    var allKeys = Object.keys(items);
+    alert(allKeys);
+});
+
 //console.log(document.getElementsByClassName('qGXjvb'));
 var bodyAds = document.getElementsByClassName('qGXjvb');
 //console.log(bodyAds.length);

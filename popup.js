@@ -1,15 +1,25 @@
 let switch1 = document.getElementById("switch1");
 //let switch1 = document.querySelector("input[name=switch1]");
 
-// When switch is toggled change text to enabled / disabled
+// When switch is toggled change text to enabled / disabled, 
 switch1.addEventListener("change", async () => {
   let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+  let enabled = "false"
+  chrome.storage.sync.get(null, function(items) {
+    var allKeys = Object.keys(items);
+    alert(allKeys);
+  });
   if (switch1.checked) {
     document.getElementById("switchText").innerHTML = "Enabled";
+    chrome.storage.sync.set({enabled: "true"}, function() {
+      //alert('Value is set to ' + enabled);
+    });
   }
   else {
     document.getElementById("switchText").innerHTML = "Disabled";
-    //alert("disabled");
+    chrome.storage.sync.set({enabled: "false"}, function() {
+      //alert('Value is set to ' + enabled);
+    });
   }
   chrome.scripting.executeScript({
     target: { tabId: tab.id },
@@ -18,7 +28,7 @@ switch1.addEventListener("change", async () => {
 });
 
 // Change text to disabled / enabled
-function switchToggle() {
+function switchToggleText() {
   //alert("test12");
   document.getElementById("switchText").style.color = "blue";
   //switch1.innerHTML = "Enabled";
