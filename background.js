@@ -5,3 +5,7 @@ chrome.runtime.onInstalled.addListener(() => {
   console.log('Default background color set to %cblack', `color: ${color}`);
   console.log(chrome.storage.sync.get());
 });
+
+// set extension to enabled when first installed
+chrome.storage.sync.set({enabled: true}, function() {
+});
