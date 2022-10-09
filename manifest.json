@@ -30,6 +30,5 @@
     "32": "assets/32x32.png",
     "48": "assets/48x48.png",
     "128": "assets/128x128.png"
-  },
-  "options_page": "options.html"
+  }
 }
